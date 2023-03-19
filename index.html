@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .submission-form {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #000000;
+            margin: 0%;
+            margin-bottom: opx;
+            margin-left: 100px;
+            font-style: normal;
+        }
+
+        pr {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 135px;
+            color: dodgerblue;
+            font-style: oblique;
+        }
+
+        fieldset {
+            color: #050505;
+            background-color: skyblue;
+            border: 0px solid green;
+            margin-top: 10px;
+
+
+        }
+
+        .gender {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 7px;
+        }
+
+        .honey {
+            display: block;
+            margin-top: 20px;
+            padding: 5px;
+
+
+        }
+
+        .my-input {
+            display: block;
+            width: 90%;
+            border-radius: 10px;
+            margin-left: 15px;
+            margin-top: 15px;
+            font-size: 18px;
+            padding: 5px;
+            font-style: unset;
+        }
+
+        .my-button {
+            border-radius: 20px;
+            color: dodgerblue;
+
+        }
+
+        .my-gender {
+            color: dodgerblue;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <form class="submission-form">
+            <h2>REGISTRATION FORM</h2>
+            <pr>[Fill in your details to sign up]</pr>
+            <fieldset>
+                <div class="honey">
+                    <label for="Fullname">FULLNAME</label>
+                    <input class="my-input" type="text" name="name" id="name" placeholder="username" required>
+                </div>
+                <div class="honey">
+                    <label for="EMAIL ADDRESS">EMAIL ADDRESS</label>
+                    <input class="my-input" type="email address" id="Email address" placeholder="example@gmail.com"
+                        required>
+                    <span role="alert" id="name error" aria-hidden="true"></span>
+                </div>
+                <div class="honey">
+                    <label for="DOB">DATE OF BIRTH</label>
+                    <input class="my-input" type="date" Name="DOB" id="DOB" required>
+                </div>
+                <div class="honey">
+                    <label for="Number">PHONE NUMBER</label>
+                    <input class="my-input" type="tel" id="Phone Number" placeholder="+234-000-000-000" required>
+                </div>
+                <div class="gender">
+                    <label for="Sex">MALE</label>
+                    <input class="my-gender" type="radio" id="Male" name="sex" value="Male" required>
+                    <label for="sex">FEMALE</label>
+                    <input class="my-gender" type="radio" id="Female" name="sex" value="Female" required>
+                </div>
+                <div class="honey">
+                    <label for="PASSWORD">PASSWORD</label>
+                    <input class="my-input" type="PASSWORD" id="PASSWORD" name="PASSWORD" required>
+                </div>
+                <div class="honey">
+                    <input class="my-button" type="SUBMIT" value="SUBMIT" id="submit-button"
+                        onclick="alert('successful!')">
+            </fieldset>
+    </div>
+</body>
+</html>
